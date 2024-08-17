@@ -17,6 +17,7 @@
     --input-border: #dfdfdf;
     --input-bg: #f1f1f0;
   }
+
 @media screen and (max-width: 768px) {
     .container {
       flex-direction: column;
@@ -42,12 +43,10 @@
   
     .show-lg {
       display: none;
-  
     }
   
     .show-sm {
       display: block;
-  
     }
   
     .sm-share {
@@ -121,10 +120,19 @@
       overflow: hidden;
       width: 100%;
     }
-  
+    .ad-creative img {
+      max-height: 320px;
+  }
     .swiper-wrapper {
       display: flex;
       transition: transform 0.3s ease;
+      -webkit-transition: -webkit-transform 0.3s ease; /* Safari-specific */
+    }
+
+
+    .swiper-wrapper > div {
+      flex-shrink: 0;
+      width: 100%;
     }
   
     .swiper-spacer-container {
@@ -197,6 +205,7 @@
       padding: 40px 15px;
       text-align: center;
     }
+
   
     .event-section .first-container h2 {
       font-size: 30px;
@@ -220,6 +229,10 @@
       text-align: center;
     }
   
+    .event-section .second-container img{
+      width: 100%;
+    }
+
     .min-button-width {
       min-width: 200px
     }
