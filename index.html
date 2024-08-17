@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caraway's Funnel</title>
+  <link rel="stylesheet" href="assets/css/helpers.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://db.onlinewebfonts.com/c/e84b14fd516cd2d446d7aa871874f5ab?family=romina+W00+medium"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-page">
+    <div class="main-header">
+      <div class="logo">
+        <img src="assets/img/logo1.png" alt="">
+      </div>
+      <div class="search-bar">
+        <!-- Search Icon added before the placeholder -->
+        <span class="search-icon">&#128269;</span>
+        <input type="text" class="search-input" placeholder="Search Creative OS">
+        <span class="search-shortcut">⌘+K</span>
+      </div>
+      <div class="show-sm" onclick="toggleSidebar()">
+        <img src="assets/img/svg/menu.svg" alt="">
+      </div>
+    </div>
+    <div class="container">
+
+      <!-- Sidebar -->
+      <nav class="sidebar">
+
+        <!-- Toggle icon -->
+        <div class="nav-icon" onclick="toggleSidebar()">
+          <img src="assets/img/svg/btn-nav-chevron.svg" alt="Navigation Icon">
+        </div>
+
+        <!-- Sidebar contents -->
+        <div class="sidebar-section mb-4">
+          <ul class="main-sidebar-item">
+            <li>
+              <img src="assets/img/svg/inspiration.svg"></span>
+              <span>Inspiration</span>
+            </li>
+            <li>
+              <img src="assets/img/svg/template.svg"></span>
+              <span>Template</span>
+            </li>
+            <li>
+              <img src="assets/img/svg/collections.svg"></span>
+              <span>Collections</span>
+            </li>
+            <li>
+              <img src="assets/img/svg/brand.svg"></span>
+              <span>Brands</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section mb-4">
+          <div class="mb-4">
+            <h2>Featured</h2>
+          </div>
+          <ul>
+            <li class="justify-left"><span class="mr-4">Hidden gems</span> <span><img
+                  src="assets/img/svg/lock.png"></span></li>
+            <li class="justify-left"><span class="mr-4">Evergreen ads</span> <span><img
+                  src="assets/img/svg/lock.png"></span></li>
+            <li class="justify-left"><span class="mr-4">Testing lab</span> <span><img
+                  src="assets/img/svg/lock.png"></span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section active">
+          <div class="d-flex justify-between cursor-pointer mb-4" onclick="toggleSection(this)">
+            <h2>Saved</h2>
+            <img src="assets/img/svg/add-collection.svg" alt="">
+          </div>
+          <ul>
+            <li><span>All saved</span> <span><img src="assets/img/svg/dots-expand.svg" alt="more"></span></li>
+            <li><span>Board name</span> <span><img src="assets/img/svg/dots-expand.svg" alt="more"></span></li>
+            <li><span>Board name</span> <span><img src="assets/img/svg/dots-expand.svg" alt="more"></span></li>
+            <li><span>Board name</span> <span><img src="assets/img/svg/dots-expand.svg" alt="more"></span></li>
+            <li><span>Board name</span> <span><img src="assets/img/svg/dots-expand.svg" alt="more"></span></li>
+          </ul>
+          <div class="d-flex justify-between cursor-pointer">
+            <h4 class="view-boards">View all boards</h4>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h4>Settings</h4>
+          <h4>Help & Feedback</h4>
+          <h4>Join the CreativeOS Slack</h4>
+        </div>
+        <div class="d-flex items-center">
+          <div class="account-circle mr-3"></div>
+          <h4 class="account-text">My Account</h4>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="main-content">
+
+        <div class="content-header">
+
+          <div class="d-flex items-center">
+            <button class="secondary-button-outline">
+              Back
+            </button>
+            <div class="content-header-text ml-4">
+              Caraway's Funnel
+            </div>
+          </div>
+          <div class="show-lg">
+            <button class="secondary-button-outline mr-2">
+              Share Funnel
+            </button>
+            <button class="secondary-button-outline">
+              Save Funnel
+            </button>
+          </div>
+        </div>
+
+        <section class="content">
+          <!-- Show swiper only on small device -->
+
+
+          <!-- Ad Creative Section -->
+          <div class="content-left">
+            <div class="mb-4 text-light show-lg">
+              Ad Creative
+            </div>
+
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="first-swiper-item active">
+                  <!-- Content for the first swiper item -->
+                  <div class="show-sm">
+                    <div class="swiper-spacer-container ">
+                      <div class="add-text-sm">Ad creative</div>
+                      <div class="swiper-spacer"></div>
+                      <div class="landing-text-sm">Landing page</div>
+                    </div>
+
+                    <div class="d-flex justify-between mb-4 ">
+                      <div class="text-light">
+                        <img src="assets/img/svg/dot-active.svg" alt="*">
+                        <img src="assets/img/svg/dot-inactive.svg" alt="*">
+                      </div>
+
+                      <div></div>
+                    </div>
+
+                  </div>
+
+                  <div class="ad-creative ">
+                    <div class="ad-text">
+                      <div class="rating-container">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                      <p>“Why didn’t I buy these <br> sooner? They make cooking & <br> cleaning so much easier.”</p>
+                      <p>— Stephanie R.</p>
+                    </div>
+
+                    <div class="ad-image">
+                      <img src="assets/img/cookware-set.png" alt="Cookware Set">
+                    </div>
+                    <div class="ad-bottom-text">
+                      <button class="secondary-button uppercase">Shop Cookware Set</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="second-swiper-item">
+                  <!-- Content for the second swiper item :> Mobile view only -->
+                  <div class="show-sm">
+                    <div class="swiper-spacer-container">
+                      <div class="add-text-sm">Ad creative</div>
+                      <div class="swiper-spacer second-swiper"></div>
+                      <div class="landing-text-sm">Landing page</div>
+                    </div>
+
+                    <div class="d-flex justify-between mb-4 ">
+                      <div class="text-light">
+                        <img src="assets/img/svg/dot-inactive.svg" alt="*">
+                        <img src="assets/img/svg/dot-active.svg" alt="*">
+                      </div>
+
+                      <div class="text-light landing-text-sm">View landing page
+                        <img src="assets/img/svg/arrow-up.svg" alt="up">
+                      </div>
+                    </div>
+
+                    <div class="discount">
+                      <p><strong>Limited Time Offer</strong> spend $95+ and receive up to <br> $2000 Off Your Next
+                        Purchase</p>
+
+                    </div>
+
+                    <div class="navbar-sm">
+                      <img class="logo-caraway" src="assets/img/logo.png" alt="Logo">
+                      <div class="d-flex">
+                        <img class="logo-caraway-alt" src="assets/img/logo-alt.png" height="40px" alt="Logo">
+                        <div class="hamburger" onclick="toggleCookwareMenu()">
+                          <img src="assets/img/svg/menu.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="event-section">
+                      <div class="first-container">
+                        <p class="uppercase">Spring saving event</p>
+                        <h2>Unlock A Free <br> Reward</h2>
+                        <p>This month only, spend $95+ and <br> receive up to $2000 Off <br> Your Next
+                          Purchase.*</p>
+                        <div> <button class="info-button min-button-width mb-4">Shop All <span><img class="arrow-right"
+                                src="assets/img/svg/arrow-right.svg"></span></button></div>
+                        <div> <button class="secondary-button min-button-width">Shop Cookware <span><img
+                                class="arrow-right" src="assets/img/svg/arrow-right.svg"></span></button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="assets/img/cookware-set-ss.png" alt="">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="content-footer">
+                <button class="secondary-button-outline mr-1">
+                  Request Template
+                </button>
+                <button class="secondary-button-outline mr-1">
+                  Save
+                </button>
+                <button class="secondary-button-outline">
+                  <img src="assets/img/svg/upload.svg" height="12px" alt="upload">
+                </button>
+              </div>
+              <div class="show-sm">
+                <div class="sm-share">
+                  <button class="secondary-button-outline mr-2">
+                    Share Funnel
+                  </button>
+                  <button class="secondary-button-outline">
+                    Save Funnel
+                  </button>
+                </div>
+              </div>
+              <!-- Creative Highlights Section -->
+              <h3 class="creative-highlights-header">Creative Highlights</h3>
+              <div class="creative-highlights">
+                <h4>Platform</h4>
+                <div class="d-flex items-center mb-1">
+                  <div class="highlight-icon"><img src="assets/img/svg/facebook.svg" alt="facebook"></div>
+                  <div class="highlight-icon-text">Facebook</div>
+                </div>
+                <div class="d-flex items-center">
+                  <div class="highlight-icon"><img src="assets/img/svg/instagran.svg" alt="instagram"></div>
+                  <div class="highlight-icon-text">Instagram</div>
+                </div>
+
+                <div class="performance">
+                  <h4>Performance</h4>
+                  <div class="highlight-icon-text">Reach: 203,000</div>
+                  <div class="highlight-icon-text">Evergreen Top 15% run-time</div>
+                </div>
+
+                <div class="tags">
+                  <h4>Tags</h4>
+                  <span>Longer Tag</span>
+                  <span>Longer Tag</span>
+                  <span>Longer Tag</span>
+                  <span>Longer Tag</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Landing Page Section -->
+          <div class="content-right show-lg">
+            <div class="d-flex justify-between mb-4 ">
+              <div class="text-light">Landing page</div>
+              <div class="text-light">View landing page <img src="assets/img/svg/arrow-up.svg" alt=""></div>
+            </div>
+            <div class="top-divider"></div>
+            <div class="d-flex justify-between items-center">
+              <div class="d-flex">
+                <span>About</span>
+                <span class="ml-4">Reviews</span>
+              </div>
+              <div><img class="logo-caraway" src="assets/img/logo.png" alt="Logo"></div>
+              <div class="d-flex">
+                <div class="search-bar">
+                  <span class="search-icon">&#128269;</span>
+                  <input type="text" class="search-input-rounded" placeholder="Search products">
+                </div>
+                <img class="logo-caraway-alt" src="assets/img/logo-alt.png" alt="Logo">
+              </div>
+            </div>
+            <!-- Navigation links -->
+            <div class="navbar">
+              <!-- Hamburger Menu Icon -->
+              <div class="hamburger" onclick="toggleCookwareMenu()">
+                <img src="assets/img/svg/menu.svg" alt="">
+              </div>
+              <ul class="nav-link">
+                <li><a href="#" target="_blank">Shop All</a></li>
+                <li><a href="#" target="_blank">Cookware <span>NEW</span></a></li>
+                <li><a href="#" target="_blank">Stainless Steal</a></li>
+                <li><a href="#" target="_blank">Bakeware</a></li>
+                <li><a href="#" target="_blank">Food Storage</a></li>
+                <li><a href="#" target="_blank">Prepware</a></li>
+                <li><a href="#" target="_blank">Tea Kettle</a></li>
+                <li><a href="#" target="_blank">Accessories</a></li>
+                <li><a href="#" target="_blank">Bundle & Save</a></li>
+              </ul>
+            </div>
+
+
+
+            <!-- Banner contents -->
+            <div class="banner">
+              <h2>Meet the New <br>Cookware+ Collection</h2>
+              <p>Crafted with our signature non-stick ceramic, these new <br> silhouettes will take your cooking to
+                the
+                next level.</p>
+              <button class="secondary-button mr-4">Shop Cookware+</button>
+              <button class="secondary-button">Shop All</button>
+            </div>
+            <div class="content-footer">
+              <button class="secondary-button-outline mr-1">
+                Request Template
+              </button>
+              <button class="secondary-button-outline mr-1">
+                Save
+              </button>
+              <button class="secondary-button-outline">
+                <img src="assets/img/svg/upload.svg" height="12px" alt="upload">
+              </button>
+            </div>
+
+            <!-- Best sellers section -->
+            <div class="best-seller">
+              <h2 class="capitalize">Explore our best sellers</h2>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>
